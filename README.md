@@ -46,3 +46,18 @@ description of possible AWS services that can be used to deploy a honeypot
    ```
 
    - Replace `/path/to/your/key.pem` with the path to your key pair and `your-instance-public-dns` with the public DNS of your instance.
+
+6. **Configure your server**:
+
+   - Once you are connected to your instance, you can configure it to act as a honeypot.
+   - run the following command to update the package list:
+
+   ```
+   sudo apt-get update
+   ```
+
+   - run the following command to install the necessary packages:
+
+   ```
+   sudo apt-get install git
+   ```
