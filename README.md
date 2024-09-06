@@ -35,3 +35,14 @@ description of possible AWS services that can be used to deploy a honeypot
    - Review your instance settings and click on the "Launch" button.
    - Create a new key pair or use an existing one to connect to your instance.
    - Click on the "Launch Instances" button.
+
+5. **Connect to the instance**:
+
+   - Once your instance is running, you can connect to it using SSH.
+   - Open a terminal window and run the following command to connect to your instance:
+
+   ```
+   ssh -i /path/to/your/key.pem ec2-user@your-instance-public-dns
+   ```
+
+   - Replace `/path/to/your/key.pem` with the path to your key pair and `your-instance-public-dns` with the public DNS of your instance.
