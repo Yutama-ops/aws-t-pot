@@ -61,3 +61,24 @@ description of possible AWS services that can be used to deploy a honeypot
    ```
    sudo apt-get install git
    ```
+
+7. **Configure the t-pot honeypot**:
+
+   - run the following command to install t-pot:
+
+   ```
+   git clone https://github.com/telekom-security/tpotce
+   cd tpotce
+   sudo ./install.sh
+   ```
+
+8 **Configure the security group**:
+
+- Go to the [AWS Management Console](https://aws.amazon.com/console/).
+- Click on the "Services" dropdown menu and select "EC2". - Click on the "Security Groups" link in the left-hand menu. - Select the security group that you created for your honeypot instance.
+- Click on the "Inbound Rules" tab and add a new rule to allow traffic on the ports that your honeypot is listening on. - in this case, t-pot is listening on port 64297, and 64295. ( web interface and ssh )
+
+8. **Access the t-pot web interface**:
+
+   - Once t-pot is installed, you can access the web interface by opening a web browser and navigating to `http://your-instance-public-dns:64297`.
+   - You can log in to the web interface using the username and password that you have created during installation(`username`/`password`).
